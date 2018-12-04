@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             tools:context=".MainActivity">
+
+    <TextView
+            android:id="@+id/explanationTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:text="Click on a color to change the background color.  Also, hold 'white' or 'black' to make the background color lighter or darker!"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+            android:id="@+id/redB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#900"
+            android:text="Red"
+            android:textColor="#fff"
+            app:layout_constraintBottom_toBottomOf="@+id/orangeB"
+            app:layout_constraintEnd_toStartOf="@+id/orangeB"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/orangeB" />
+
+    <Button
+            android:id="@+id/orangeB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#be4f0a"
+            android:text="Orange"
+            android:textColor="#fff"
+            app:layout_constraintEnd_toStartOf="@+id/yellowB"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/redB"
+            app:layout_constraintTop_toBottomOf="@+id/explanationTV" />
+
+
+
+    <Button
+            android:id="@+id/yellowB"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#cc0"
+            android:text="Yellow"
+            android:textColor="#fff"
+            app:layout_constraintBottom_toBottomOf="@+id/orangeB"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/orangeB"
+            app:layout_constraintTop_toTopOf="@+id/orangeB" />
+
+    <Button
+            android:id="@+id/greenB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#090"
+            android:text="Green"
+            android:textColor="#fff"
+            app:layout_constraintBottom_toBottomOf="@+id/cyanB"
+            app:layout_constraintEnd_toStartOf="@+id/cyanB"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/cyanB" />
+
+    <Button
+            android:id="@+id/cyanB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#0cc"
+            android:text="Cyan"
+            android:textColor="#fff"
+            app:layout_constraintEnd_toStartOf="@+id/yellowB"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/greenB"
+            app:layout_constraintTop_toBottomOf="@+id/orangeB" />
+
+    <Button
+            android:id="@+id/blueB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#009"
+            android:text="Blue"
+            android:textColor="#fff"
+            app:layout_constraintBottom_toBottomOf="@+id/cyanB"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/cyanB"
+            app:layout_constraintTop_toTopOf="@+id/cyanB" />
+
+    <Button
+            android:id="@+id/violetB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#909"
+            android:text="Violet"
+            android:textColor="#fff"
+            app:layout_constraintBottom_toBottomOf="@+id/whiteB"
+            app:layout_constraintEnd_toStartOf="@+id/whiteB"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/whiteB" />
+
+    <Button
+            android:id="@+id/whiteB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="White"
+            android:background="#fff"
+            app:layout_constraintEnd_toStartOf="@+id/blackB"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/violetB"
+            app:layout_constraintTop_toBottomOf="@+id/cyanB" />
+
+    <Button
+            android:id="@+id/blackB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#000"
+            android:text="Black"
+            android:textColor="#fff"
+            app:layout_constraintBottom_toBottomOf="@+id/whiteB"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/whiteB"
+            app:layout_constraintTop_toTopOf="@+id/whiteB" />
+
+    <Button
+            android:id="@+id/backgroundB"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#fafafa"
+            android:text="Background"
+            android:textColor="#999"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/whiteB" />
+
+
+</android.support.constraint.ConstraintLayout>
